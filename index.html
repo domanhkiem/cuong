@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="card">
+            <!-- ảnh giữa khi mở -->
+          <div class="card-packaging bg-img-base" style="background-image: url(./img/4.jpg)">
+            <div class="card-center">
+                <!-- icon đóng -->
+              <a class="close bg-img-base" href="#" style="background-image: url(https://cdn3.iconfinder.com/data/icons/pyconic-icons-1-2/512/close-circle-512.png)"></a>
+            </div>
+            <div class="card--first">
+                <!-- trang chủ -->
+              <div class="card-wrapper bg-img-base front" style="background-image: url(https://media1.giphy.com/media/ls6nG5zEGX0l2IdvhU/giphy.gif?cid=ecf05e47jvp1w4xpp5v0b7fy0rdrr9egpm9fu6xi76gh2qag&rid=giphy.gif&ct=g)">
+                <a class="open" href="#">
+                  <div class="open-tail"></div>
+                  <div class="open-main"><span class="open-title">Open</span></div>
+                </a>
+              </div>
+              <!-- ảnh bên trái -->
+              <div class="card-wrapper bg-img-base back" style="background-image: url(./img/6.JPG)">
+              </div>
+            </div>
+            <div class="card--third">
+
+              <div class="card-wrapper bg-img-base front" style="background-image: url(./img/5.jpg)"></div>
+              <div class="card-wrapper bg-img-base back" style="background-image: url(./img/5.jpg)"></div>
+            </div>
+          </div>
+          <div class="ten"><h3>20/11/22_dmkpro</h3></div>
+        
+        </div>
+      </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementsByClassName('open')[0].addEventListener('click', function () {
+                document.getElementsByClassName('card-packaging')[0].classList.add('is-open')})
+
+                document.getElementsByClassName('close')[0].addEventListener('click', function () {
+                document.getElementsByClassName('card-packaging')[0].classList.remove('is-open')})
+        });
+    </script>
+
+<!-- <script src="http://www.qqpr.com/ascii/js/1021.js" ></script> -->
+
+</body>
+</html>
